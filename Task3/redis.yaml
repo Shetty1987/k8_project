@@ -1,0 +1,12 @@
+auth:
+  enabled: false
+master:
+  resources:
+    requests:
+      memory: 200Mi
+      cpu: "200m"
+    limits:
+      memory: "300Mi"
+      cpu: "300m"
+
+  # helm install  redis-chart -f redis-variable.yaml oci://registry-1.docker.io/bitnamicharts/redis
